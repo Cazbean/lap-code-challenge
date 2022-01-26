@@ -1,13 +1,11 @@
-// const { json } = require("body-parser")
+<script src = "../client/index.html"></script>
 
-// <script src = "/index.html"></script>
+const resultsBtn = document.querySelector('#results-btn')
+const randomBtn = document.querySelector('#random-btn')
 
-// const resultsBtn = document.querySelector('#results-btn')
-// const randomBtn = document.querySelector('#random-btn')
+resultsBtn.addEventListener('submit', submitHandler())
 
-// resultsBtn.addEventListener('submit', submitHandler())
-
-// function submitHandler(e) {
-//     e.preventDefault()
-// }
+function submitHandler(e) {
+    e.preventDefault()
+}
 

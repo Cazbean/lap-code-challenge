@@ -11,19 +11,20 @@ app.listen(port, () => {
 
 // Pages
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'))
+  res.sendFile(path.join(__dirname, '../client/index.html'))
 })
 
 
 app.get('/coffee', (req, res) => {
-  res.sendFile(path.join(__dirname, 'coffee.html'))
+  res.sendFile(path.join(__dirname, '../client/coffee.html'))
 })
 
 app.get('/tea', (req, res) => {
-  res.sendFile(path.join(__dirname, '/tea.html'))
+  res.sendFile(path.join(__dirname, '../client/tea.html'))
 })
 
 app.get('/hotchoc', (req, res) => {
-  res.sendFile(path.join(__dirname, '/hot-choc.html'))
+  res.sendFile(path.join(__dirname, '../client/hot-choc.html'))
 })
 
+app.use(express.static('static'));
