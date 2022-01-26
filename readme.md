@@ -11,5 +11,8 @@
 # Changelog
 
 # Bugs
+- CSS isn't loading for any of our routes - we tried many options but couldn't get it to work!
 
 # Wins & Challenges
+- Had no problems with creating the server and routes, which is great.
+- Worked collaboratively together. 
