@@ -27,6 +27,3 @@ app.get('/hotchoc', (req, res) => {
   res.sendFile(path.join(__dirname, '/hot-choc.html'))
 })
 
-app.get('/chailatte', (req, res) => {
-  res.sendFile(path.join(__dirname, '/chai-latte.html'))
-})
