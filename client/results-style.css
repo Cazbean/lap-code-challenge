@@ -3,7 +3,7 @@
 }
 
 .resultsbox {
-text-align:center;
+padding-left: 40px;
 
 }
 
@@ -17,5 +17,7 @@ text-align:center;
   
   .column {
     flex: 33.33%;
-    padding: 5px;
+    padding: 40px;
   }
+
+  
