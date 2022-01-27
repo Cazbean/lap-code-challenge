@@ -16,3 +16,5 @@
 # Wins & Challenges
 - Had no problems with creating the server and routes, which is great.
 - Worked collaboratively together. 
+- the css for the main page is added as a style script on the index.html page as it wasnt connecting to our index.html
+- added query selector and a function that activates upon clicking search as a script on the index.html page as index.js was not working.
