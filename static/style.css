@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>google search</title>
-    <link rel="stylesheet" href ="style.css>
-    <script src="/index.js></script>
-    <style>
-        * {
+* {
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -31,8 +21,8 @@ section header{
 }
 section header ul{
     display:flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-items: right;
 }
 section header ul li{
     list-style:none;
@@ -138,59 +128,3 @@ section .footer .row.row2 ul li a{
     margin-right: 25px;
     margin-left: 25px;
 }
-
-    </style>
-</head>
-<body>
-    <section>
-        <header>
-            <ul>
-                <li><a href = "#">Gmail</a></li>
-                <li><a href = "#">Images</a></li>
-                <li><a href = "#"><img src="#"></a></li>
-                <li><button> Sign in</button> </button></li>
-            </ul>
-        </header>
-        <div class ="main">
-            <img src = "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-            <div class ="searchBox">
-                <input type = "text" class ="query" value= "" name="">
-                <div class = "icons">
-                    <div><img src = ""></div>
-                </div>
-            </div>
-            <div class = "button">
-                <button class = "searchBtn"> Search</button>
-                <button> Random Page</button>
-            </div>
-            <div class ="footer">
-                <div class = "row row1">
-                    <p class = "country"> United Kingdom</p>
-                </div> 
-                <div class= "row row2">
-                    <ul>
-                        <li><a href="#">Advertising</a></li>
-                        <li><a href="#">Business</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">How Search Works</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms</a></li>
-                        <li><a href="#">Settings</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section> 
-    <script>
-        let query = document.querySelector('.query')
-let searchBtn = document.querySelector('.searchBtn');
-searchBtn.onclick = function(){
-    let url ='http://localhost:5000/'+query.value;
-    window.open(url)
-    .catch(console.warn)
-}
-    </script>
-</body>
-</html>
