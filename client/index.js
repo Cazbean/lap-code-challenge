@@ -1,11 +1,12 @@
-<script src = "../client/index.html"></script>
+/*let search = document.querySelector('search')
+let searchBtn = document.querySelector('searchBtn')
+searchBtn.onclick = function(){
+    let url = `http://localhost:5000` +search.value;
+    window.open(url); } */
 
-const resultsBtn = document.querySelector('#results-btn')
-const randomBtn = document.querySelector('#random-btn')
-
-resultsBtn.addEventListener('submit', submitHandler())
-
-function submitHandler(e) {
-    e.preventDefault()
-}
-
+    let searchBtn = document.querySelector('searchBtn')
+    searchBtn.addEventListener('click' ,getData)
+    function getData(){
+        let url="http://localhost:5000/results.html";
+        fetch(url).then(window.open(url)).catch(console.warn)
+    }
